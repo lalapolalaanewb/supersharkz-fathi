@@ -7,7 +7,7 @@ COPY . .
 # install project dependencies
 RUN yarn
 # build the project
-RUN yarn build
+RUN yarn run build
 # run the app
 CMD yarn start
 # port expose

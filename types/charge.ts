@@ -29,3 +29,10 @@ export const ChargeObjSchema = z.object({
 });
 
 export type ChargeType = z.infer<typeof ChargeObjSchema>;
+
+export type ChargeStateType = {
+  charge_amountState: boolean | null;
+  paid_amountState: boolean | null;
+  student_idState: boolean | null;
+  date_chargedState: boolean | null;
+};

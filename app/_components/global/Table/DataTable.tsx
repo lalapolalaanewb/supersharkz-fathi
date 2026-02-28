@@ -31,7 +31,8 @@ import {
 import React from "react";
 
 interface DataTableProps<TData, TValue> {
-  columns: ColumnDef<TData, TValue>[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  columns: ColumnDef<TData, any>[];
   data: TData[];
 }
 

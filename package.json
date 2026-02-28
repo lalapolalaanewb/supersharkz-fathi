@@ -8,12 +8,15 @@
     "start": "next start",
     "lint": "eslint",
     "prettier": "prettier --ignore-path=.gitignore --check .",
-    "prettier:fix": "prettier --ignore-path=.gitignore --write ."
+    "prettier:fix": "prettier --ignore-path=.gitignore --write .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "mongodb": "^7.1.0",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "redis": "^5.11.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
